@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Website Du Lịch</title>
+    <style>
+        body { font-family: Arial; margin: 0; }
+        .menu { background: #333; padding: 10px; }
+        .menu a { color: white; margin-right: 20px; text-decoration: none; }
+        .content { padding: 20px; }
+    </style>
+</head>
+<body>
+<form runat="server">
+    <div class="menu">
+        <a href="QTTour.aspx">Quản trị Tour</a>
+        <a href="ThemTour.aspx">Thêm tour</a>
+    </div>
+
+    <div class="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+    </div>
+</form>
+</body>
+</html>
